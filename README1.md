@@ -2,7 +2,7 @@
 
 Задание 1
 
-![alt test](
+![alt test](https://github.com/xZuLuSx/disaster-recovery/blob/main/elk1.jpg)
 
 Задание 2
 Приведите ответ в свободной форме........

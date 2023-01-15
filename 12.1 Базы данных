@@ -1,0 +1,125 @@
+Домашнее задание к занятию 12.1 "Базы данных.- Амелин А.П."
+
+Задание 1
+
+Какие данные хранятся в этих таблицах:
+
+1. ФИО - фамилия, имя и отчество сотрудника
+2. Оклад - заработная плата
+3. Должность - должность сотрудника
+4. Тип подразделения - отдел, где работает сотрудник
+5. Структурное подразделение - наименование отдела
+6. Дата - дата найма сотрудника
+7. Адрес филиала - местонахождение
+8. Проект на которой назначен - наименование проекта для конкретного сотрудника
+
+Тип данных столбцов, если хранятся PostgreSQL
+
+1. ФИО -строковой (varchar)
+2. Оклад - числовой (decimal/numeric)
+3. Должность - строковый (varchar)
+4. Тип подразделения - строковый (varchar)
+5. Структурное подразделение - строковый (varchar)
+6. Дата - дата и время (tinyint)
+7. Адрес филиала - стройковый (varchar)
+8. Проект на которой назначен - строковый (varchar)
+
+Решение
+
+staff (
+
+staff_id primary_key,
+
+FName VARCHAR(50) ,
+
+LName VARCHAR(50) ,
+
+Patronymic varchar(50),
+
+divisions_id varchar(50),
+
+Structura_id varchar(50),
+
+date_off_id datetime,
+
+position_id varchar(50),
+
+salary_id numeric,
+
+address_id VARCHAR(50),
+
+project_id VARCHAR(50),
+
+)
+
+salary (
+
+salary_id primary_key
+
+pay numeric
+
+)
+
+position (
+
+position_id primary_key
+
+spethion_type
+
+)
+
+divisions (
+
+divisions_id primary_key
+
+department varchar(50)
+
+Unit Group varchar(50)
+
+Unit Group_type
+
+department_type
+
+)
+
+Structura (
+
+Structura_id primary_key
+
+Group varchar(50)
+
+Structura_type
+
+Structura_title
+
+)
+
+date_off_Employee )
+
+date_off_id primary_key
+
+date datetime
+
+(
+
+branch address (
+
+address_id primary_key
+
+edge VARCHAR(50)
+
+city VARCHAR(50)
+
+street VARCHAR(50)
+
+house VARCHAR(50)
+
+)
+
+project (
+
+project_id primary_key
+
+project_type
+
+)

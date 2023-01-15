@@ -8,9 +8,10 @@
 
 ![alt test](https://github.com/xZuLuSx/disaster-recovery/blob/main/elk2.jpg)
 
-Задание 3 и 4
+Задание 3
 
-Не могу их выполнить, так как не устанвливается Logstash. Пробовал искать ошибку в Google. Пишут что для работы Logstash нужно установить JAVA 8. Я все это установил и прописывал в конфиге JAVA_HOME. Результата это не дало
+![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/zad3elk.png)
 
+Задание 4
 
-![alt test](https://github.com/xZuLuSx/disaster-recovery/blob/main/elk%203%20error.jpg)
+![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/zad4elk.png)

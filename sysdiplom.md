@@ -34,7 +34,7 @@
 
 ![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/img/graf2.png)
 
-Добавил дашборды Node Exporter и Nginx Log Exporter
+Добавил дашборды Node Exporter и Nginx Log Exporter.
 Далее настройка дешбордов с отображением метрик, минимальный набор - Utilization, Saturation, Errors для CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes.
 Настройка nginx_http_response_count_total
 

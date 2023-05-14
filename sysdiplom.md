@@ -16,7 +16,7 @@
 
 ![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/img/dip1.png)
 
-№№№ Мониторинг
+### Мониторинг
 
 Установил на web-1 и web-2 Node Exporter и Nginx Log Exporter через ansible-playbook nginxlog-exporter.yaml и ansible-playbook node-exporter.yaml.
 

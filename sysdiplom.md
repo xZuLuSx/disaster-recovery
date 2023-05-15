@@ -53,7 +53,7 @@
 
 Grafana работает и все видит.
 
-№№№ Логи
+### Логи
 
 Cоздал виртуальную машину и устанавливаю Elastic через ansible-playbook elastic.yaml
 

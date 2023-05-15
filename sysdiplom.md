@@ -75,32 +75,41 @@ Cоздал виртуальную машину и устанавливаю Elas
 
 ### Сеть
 
+Создал VPC.
+
+![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/img/vpc1.png)
+
+Web, Prometheus, Elasticsearch поместил в приватные подсети.
+
+Grafana, Kibana, application load balancer, Bastion host в публичной подсети.
+
+![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/img/vpc2.png)
+
+Группы безопасности
+
+![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/img/vpc33333.png)
+
+Настроил Security Groups на разрешение входяшего ssh через Bastion host. Доступ через Bastion host работает
+
+![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/img/ssh%2022.png)
+
+### Резервное копирование
+
+Создаю snapshot всех 7 дисков с ограничением времени жизни snaphot в неделю и сами snaphot настроем на ежедневное копирование через terratorm манифест yandex_compute_snapshot_schedule.tf
+
+![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/img/copy1.png)
+
+Расписание снимков example-schedule
+
+![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/img/copy2.png)
 
 
-![alt test]()
+Начались создаваться snapshot. 22.00 по Москве будут создан snapshot всех дисков.
 
-![alt test]()
+![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/img/copy3.png)
 
-![alt test]()
+![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/img/copy4.png)
 
-![alt test]()
+Спустя сутки
 
-![alt test]()
-
-![alt test]()
-
-![alt test]()
-
-![alt test]()
-
-![alt test]()
-
-![alt test]()
-
-![alt test]()
-
-![alt test]()
-
-![alt test]()
-
-![alt test]()
+![alt test](https://raw.githubusercontent.com/xZuLuSx/disaster-recovery/main/img/copy5.png)
